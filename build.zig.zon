@@ -1,0 +1,11 @@
+.{
+    .name = "zig-package-consumer",
+    .version = "0.0.1",
+    .dependencies = .{
+        .zig_package_example = .{
+            .url = "https://github.com/atemmel/zig-package-example/archive/43dec1f8a823fbb35b080065d47502eee44ce9ae.tar.gz",
+			.hash = "1220b4406b536fc3c359b3250e08f948e953559e9ff3c4a4b1d2462041c715ec011b",
+        },
+    },
+}
+
