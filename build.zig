@@ -24,10 +24,10 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
-    b.dependency("zig_package_example", .{
+    exe.addModule("zig_package_example", b.dependency("zig_package_example", .{
         .target = target,
         .optimize = optimize,
-    }).module("zig_package_example");
+    }).module("zig-package-example"));
 
     // This declares intent for the executable to be installed into the
     // standard location when the user invokes the "install" step (the default
